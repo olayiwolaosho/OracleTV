@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="New_Estate_Baptist_Church.Views.AboutChurch">
+    <ContentPage.Content>
+        <StackLayout>
+            <ScrollView>
+          <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+        <StackLayout Grid.Row="0">
+        <Image Source="churchimg.png" Aspect="AspectFill" VerticalOptions="Start" HeightRequest="380"/>
+        </StackLayout>
+          <StackLayout  WidthRequest="200" Grid.Row="1">
+            <ScrollView>
+                    <Label Text="New estate baptist"  x:Name="details"  />
+                </ScrollView>
+                </StackLayout>
+        </Grid>
+                </ScrollView>
+            </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             x:Class="New_Estate_Baptist_Church.Views.BiblePage" Icon="bible.png">
+   <ContentPage.Content>
+    <StackLayout>
+            <Image Source="Biblebanner.png" HorizontalOptions="StartAndExpand"/>
+          <ListView x:Name="listView"                  
+              HasUnevenRows="True"
+                  SeparatorVisibility="None"
+                  Margin="0,3,0,5"
+                  ItemSelected="Handle_ItemSelected">
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <ViewCell>
+                                <ViewCell.View>
+                                        <StackLayout Orientation="Horizontal" Padding="3">
+                                         <StackLayout Orientation="Vertical" VerticalOptions="Center" Padding="10,5,3,5">
+                                          <Label Text = "{Binding BookName}" TextColor="Black" FontSize="15" VerticalTextAlignment="Center"  />
+                                           </StackLayout>
+                                        </StackLayout>
+                                </ViewCell.View>
+                            </ViewCell>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+            </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

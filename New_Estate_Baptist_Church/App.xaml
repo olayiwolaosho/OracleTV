@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Application xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="New_Estate_Baptist_Church.App">
+    <Application.Resources>
+        <ResourceDictionary>
+            <!--Global Styles-->
+           <!-- <Color x:Key="NavigationPrimary">#662b25</Color>
+            <Style TargetType="NavigationPage">
+                <Setter Property="BarBackgroundColor" Value="{StaticResource NavigationPrimary}" />
+                <Setter Property="BarTextColor" Value="White" />
+            </Style-->
+            <Style TargetType="Label">
+                 <Setter Property="FontFamily">
+                    <Setter.Value>
+                        <OnPlatform x:TypeArguments="x:String" iOS="AppleSDGothicNeo-Medium" Android="DroidSansMono" />
+                    </Setter.Value>
+                    </Setter>
+            </Style>
+            <Style x:Key="FontLabel" TargetType="Label">
+                <Setter Property="FontFamily" Value="{DynamicResource FontFamilyName}" />
+            </Style>
+            
+             <Style x:Key="TitleLabel" TargetType="Label">
+                <Setter Property="FontSize" Value="16"/>
+                <Setter Property="FontAttributes" Value="Bold"/>
+                </Style>
+            
+            <Style x:Key="HeaderLabel" TargetType="Label">
+                <Setter Property="FontSize" Value="18"></Setter>
+                <Setter Property="FontAttributes" Value="Bold"></Setter>
+                <Setter Property="TextColor" Value="Black"></Setter>
+            </Style>
+            <Style x:Key="ListHeaderLabel" TargetType="Label">
+                <Setter Property="FontSize" Value="16"></Setter>               
+                <Setter Property="TextColor" Value="Black"></Setter>
+                <Setter Property="VerticalOptions" Value="Center"></Setter>
+                <Setter Property="HorizontalOptions" Value="FillAndExpand"></Setter>
+            </Style>
+            <Style x:Key="ListContentLabel" TargetType="Label">
+                <Setter Property="FontSize" Value="14"></Setter>
+                <Setter Property="TextColor" Value="Gray"></Setter>
+                <Setter Property="LineBreakMode" Value="MiddleTruncation"></Setter>
+                <Setter Property="FontAttributes" Value="Italic"></Setter>
+                <Setter Property="VerticalOptions" Value="Center"></Setter>
+                <Setter Property="HorizontalOptions" Value="FillAndExpand"></Setter>
+                <Setter Property="LineBreakMode" Value="TailTruncation"></Setter>
+            </Style>
+            <Style x:Key="ListDateLabel" TargetType="Label">
+                <Setter Property="FontSize" Value="13"></Setter>
+                <Setter Property="TextColor" Value="Blue"></Setter>
+                <Setter Property="VerticalOptions" Value="Center"></Setter>
+                <Setter Property="HorizontalOptions" Value="Start"></Setter>
+            </Style>
+            <Style x:Key="ContentLabel" TargetType="Label">
+                <Setter Property="FontSize" Value="16"></Setter>
+                <Setter Property="TextColor" Value="Gray"></Setter>
+            </Style>
+            <Style x:Key="HeaderMediumLabel" TargetType="Label">
+                <Setter Property="FontSize" Value="18"></Setter>
+                <Setter Property="FontAttributes" Value="Bold"></Setter>
+                <Setter Property="TextColor" Value="Black"></Setter>
+               
+            </Style>
+            
+            
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>

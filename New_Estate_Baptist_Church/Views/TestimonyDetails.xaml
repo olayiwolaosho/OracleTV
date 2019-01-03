@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="New_Estate_Baptist_Church.Views.TestimonyDetails"
+             xmlns:controls="clr-namespace:ImageCircle.Forms.Plugin.Abstractions;assembly=ImageCircle.Forms.Plugin">
+     <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Add" Icon="addnew.png" Clicked="Handle_Clicked_1"/>
+           
+    </ContentPage.ToolbarItems>
+    <ContentPage.Content>
+        
+        
+        
+            <StackLayout>
+            <ScrollView>
+            <StackLayout VerticalOptions="FillAndExpand" Margin="13">
+                <StackLayout Orientation="Horizontal" Spacing="28">
+                    <StackLayout>
+                        <controls:CircleImage Source="{Binding testifierImagePath}"
+                                              WidthRequest="120" HeightRequest="120" Aspect="AspectFill">
+                            </controls:CircleImage>
+                    </StackLayout>
+                    <StackLayout Orientation="Vertical" Spacing="10">
+                        <StackLayout Orientation="Horizontal">
+                            <Label Text="{Binding title}"  
+                           FontSize="20" x:Name="title" LineBreakMode="WordWrap" />
+                               </StackLayout>
+                        <BoxView HeightRequest="1" Color="Black"/>
+                         <StackLayout Orientation="Horizontal" >
+                            <Image Source=""/>
+                            <Label Text="{Binding testifiersName}" Font="Bold" x:Name="name"/>
+                            </StackLayout>
+                         <StackLayout Orientation="Horizontal">
+                    <Image Source=""/>
+                        <Label Text="{Binding date}" Font="Bold" x:Name="date"/>
+                            </StackLayout>
+                          <StackLayout Orientation="Horizontal" WidthRequest="200">
+                             <Image Source=""/>
+                        <Label Text="{Binding category}" Font="Bold" x:Name="category"/>
+                              </StackLayout>
+                          
+                               <!-- <BoxView HeightRequest="6" Color="Gray" HorizontalOptions="FillAndExpand"/>-->
+                          
+                         
+                    </StackLayout>
+                </StackLayout>
+               
+                <StackLayout HorizontalOptions="FillAndExpand" WidthRequest="200">
+                    <Label Text="{Binding details}" FontSize="Medium" x:Name="details" />
+                </StackLayout>
+            </StackLayout>
+                </ScrollView>
+            <StackLayout Orientation="Horizontal" 
+                         BackgroundColor="White"
+                         HorizontalOptions="FillAndExpand"
+                         VerticalOptions="EndAndExpand" 
+                         Padding="0,0,0,13">
+                <StackLayout HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
+                            
+                <Button Image="backuse.png" Clicked="Handle_Clicked" BackgroundColor="Transparent" x:Name="backbutton"/> 
+                        </StackLayout>
+               
+                 <StackLayout HorizontalOptions="CenterAndExpand"
+                               VerticalOptions="CenterAndExpand">
+                <Button Image="frontuse.png" BackgroundColor="Transparent" Clicked="Handle_Clicked_2" x:Name="frontbutton"/>
+                    </StackLayout>
+            </StackLayout>
+                </StackLayout>
+       
+    </ContentPage.Content>
+</ContentPage>

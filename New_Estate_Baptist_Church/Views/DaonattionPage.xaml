@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             x:Class="New_Estate_Baptist_Church.Views.DaonattionPage" Icon="donation.png">
+    <StackLayout>
+        <ScrollView>
+        <StackLayout VerticalOptions="StartAndExpand"  Margin="0">
+                    <Frame HasShadow="True" Margin="5,5,5,5">
+                        <StackLayout>
+                            <Label Margin="10,2,10,10" Style="{StaticResource HeaderMediumLabel}" Text="Online Giving"/>
+                            <BoxView HeightRequest="1" BackgroundColor="LightGray"></BoxView>
+                            <Label Margin="10,2,10,10" Style="{StaticResource ContentLabel}" Text="Give Online, fast easy and secure."/>
+                            <Button  Text="Give Now" TextColor="White" BackgroundColor="Green" Clicked="Handle_Clicked"/>
+                           <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand">
+                                <Image Source="icons8bankcards0.png" WidthRequest="40"/>
+                                <Image Source="icons8mastercard.png" WidthRequest="40"/>
+                                <Image Source="icons8visa240.png" WidthRequest="40"/>
+                            </StackLayout>
+                        </StackLayout>
+                        
+                    </Frame>
+                    <Frame HasShadow="True" Margin="5,5,5,5">
+                <StackLayout Orientation="Horizontal">
+                    <StackLayout Orientation="Horizontal" HorizontalOptions="Start">
+                        <Image Source="firstbank.png" HeightRequest="100" WidthRequest="100"/>
+                    </StackLayout>
+                            <StackLayout Orientation="Vertical" HorizontalOptions="End">
+                                <Label Margin="10,1,0,0" Style="{StaticResource HeaderMediumLabel}" Text="First Bank" Font="ChronicaPro-Light"/>
+                                <BoxView HeightRequest="1" BackgroundColor="LightGray"></BoxView>
+                                <Label Margin="10,1,0,0" Style="{StaticResource ContentLabel}" Text="New Estate Baptist Church"/>
+                                <Label Margin="10,1,0,0" Style="{StaticResource ContentLabel}" Text="2000055066" Font="ChronicaPro-Light"/>
+                               <!-- <Label Margin="10,1,0,0" Style="{StaticResource ContentLabel}" Text="Tithe And General Offerings" Font="ChronicaPro-Light"/>-->
+
+                    </StackLayout>
+                </StackLayout>
+                    
+            </Frame>
+                   <Frame HasShadow="True" Margin="5,5,5,5">
+                <StackLayout Orientation="Horizontal">
+                    <StackLayout Orientation="Horizontal" HorizontalOptions="Start">
+                        <Image Source="AccessBankLogo.png" HeightRequest="100" WidthRequest="100"/>
+                    </StackLayout>
+                            <StackLayout Orientation="Vertical" HorizontalOptions="End">
+                                <Label Margin="10,1,0,0" Style="{StaticResource HeaderMediumLabel}" Text="Access Bank" Font="ChronicaPro-Light"/>
+                                <BoxView HeightRequest="1" BackgroundColor="LightGray"></BoxView>
+                                <Label Margin="10,1,0,0" Style="{StaticResource ContentLabel}" Text="New Estate Baptist Church"/>
+                                <Label Margin="10,1,0,0" Style="{StaticResource ContentLabel}" Text="0019813514" Font="ChronicaPro-Light"/>
+<!--                                <Label Margin="10,1,0,0" Style="{StaticResource ContentLabel}" Text="Tithe And General Offerings" Font="ChronicaPro-Light"/>-->
+
+                    </StackLayout>
+                </StackLayout>
+                    
+            </Frame>
+                   <Frame HasShadow="True" Margin="5,5,5,5">
+                <StackLayout Orientation="Horizontal">
+                    <StackLayout Orientation="Horizontal" HorizontalOptions="Start">
+                        <Image Source="ibtc.png" HeightRequest="100" WidthRequest="100"/>
+                    </StackLayout>
+                            <StackLayout Orientation="Vertical" HorizontalOptions="End">
+                                <Label Margin="10,1,0,0" Style="{StaticResource HeaderMediumLabel}" Text="IBTC" Font="ChronicaPro-Light"/>
+                                <BoxView HeightRequest="1" BackgroundColor="LightGray"></BoxView>
+                                <Label Margin="10,1,0,0" Style="{StaticResource ContentLabel}" Text="New Estate Baptist Church"/>
+                                <Label Margin="10,1,0,0" Style="{StaticResource ContentLabel}" Text="0015545966" Font="ChronicaPro-Light"/>
+                               <!-- <Label Margin="10,1,0,0" Style="{StaticResource ContentLabel}" Text="Tithe And General Offerings" Font="ChronicaPro-Light"/-->
+
+                    </StackLayout>
+                </StackLayout>
+                    
+            </Frame>
+        </StackLayout>
+            </ScrollView>
+        </StackLayout>
+</ContentPage>

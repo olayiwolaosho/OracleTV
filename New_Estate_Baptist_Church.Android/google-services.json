@@ -1,0 +1,104 @@
+{
+  "project_info": {
+    "project_number": "1073611750540",
+    "firebase_url": "https://churchplus-member-mobile-app.firebaseio.com",
+    "project_id": "churchplus-member-mobile-app",
+    "storage_bucket": "churchplus-member-mobile-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1073611750540:android:b0354fe2eee321d4",
+        "android_client_info": {
+          "package_name": "co.churchplus.NEBC"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1073611750540-ork9jfpott9d9gjomn0ffvuuiith2uei.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD2m84wCDedoCVa0RzM4iUyEv-MFq53F0E"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1073611750540:android:9d401138c262b06f",
+        "android_client_info": {
+          "package_name": "co.churchplus.rccgtod"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1073611750540-ork9jfpott9d9gjomn0ffvuuiith2uei.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD2m84wCDedoCVa0RzM4iUyEv-MFq53F0E"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1073611750540:android:7cf2ddf43c865063",
+        "android_client_info": {
+          "package_name": "com.churchplus.wordassembly"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1073611750540-ork9jfpott9d9gjomn0ffvuuiith2uei.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD2m84wCDedoCVa0RzM4iUyEv-MFq53F0E"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

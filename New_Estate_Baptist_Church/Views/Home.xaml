@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="New_Estate_Baptist_Church.Views.Home"  Title="Home" Icon="homea.png">
+    <StackLayout>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            
+            <StackLayout Grid.Row="0">
+                <Image Aspect="AspectFill" Source="Homee.png"/> 
+            </StackLayout>
+            
+            <StackLayout Grid.Row="1">
+                <ScrollView>
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="150"/>
+                        <RowDefinition Height="150"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <ImageButton Aspect="AspectFill" Grid.Row="0" Grid.Column="0" Source="AboutUs.png" Clicked="Handle_Clicked"/>
+                    <ImageButton Aspect="AspectFill" Grid.Row="0" Grid.Column="1" Source="Messages.png" Clicked="Handle_Clicked_1"/>
+                    <ImageButton Aspect="AspectFill" Grid.Row="1" Grid.Column="0" Source="OnlineGiving.png" Clicked="Handle_Clicked_2"/>
+                    <ImageButton Aspect="AspectFill" Grid.Row="1" Grid.Column="1" Source="Events2.png" Clicked="Handle_Clicked_3"/>
+                        
+                </Grid>
+                   </ScrollView>
+            </StackLayout>
+        </Grid>
+    </StackLayout>
+</ContentPage>

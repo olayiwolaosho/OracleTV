@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="New_Estate_Baptist_Church.Views.SocialProfile">
+     <ContentPage.Content>
+        <StackLayout>
+            <ScrollView>
+                <Grid RowSpacing="50">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                       
+                    </Grid.RowDefinitions>
+                  <Image Source="Home.png" Aspect="AspectFill" Grid.Row="0"/>
+                  
+                       
+                                <StackLayout Orientation="Vertical" HorizontalOptions="CenterAndExpand" Spacing="14" Grid.Row="1">
+                                       
+                                  
+
+                                    <ImageButton  Source="Facebook.png" HeightRequest="45" VerticalOptions="Center" HorizontalOptions="Center" Clicked="Handle_Clicked"/>
+
+                                   
+
+                                    <ImageButton Source="Instagram.png" HeightRequest="45" VerticalOptions="Center" HorizontalOptions="Center" Clicked="Handle_Clicked_1"/>
+                                       
+                                  
+
+                                    <ImageButton Source="Twitter.png" HeightRequest="45" VerticalOptions="Center" HorizontalOptions="Center" Clicked="Handle_Clicked_2"/>
+                                      
+                                  
+                                </StackLayout>
+                           
+
+
+
+
+                </Grid>
+            </ScrollView>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

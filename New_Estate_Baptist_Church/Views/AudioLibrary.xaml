@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"  Title="Audios" Icon="musicplayer.png" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="New_Estate_Baptist_Church.Views.AudioLibrary">
+
+        <ContentPage.Content>
+            <StackLayout Padding = "5,10">
+                <ActivityIndicator IsEnabled="{Binding IsBusy}"
+                           IsRunning="{Binding IsBusy}"
+                           IsVisible="{Binding IsBusy}"
+                           VerticalOptions="Center"
+                           HorizontalOptions="Center"/>
+                <ListView x:Name="listViewAudio"                   
+            ItemsSource = "{Binding Audios}"
+              HasUnevenRows="True"
+                  SeparatorVisibility="None"
+                  Margin="0,3,0,5"
+                  ItemSelected="OnSingleAudioSelected" IsPullToRefreshEnabled="true" RefreshCommand="{Binding RefreshCommand}" IsRefreshing="{Binding IsBusy}">
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <ViewCell>
+                                <ViewCell.View>
+                                    <Frame Margin="0,7,0,7" Padding="7" HasShadow="True" BackgroundColor="White">
+                                        <StackLayout Orientation="Horizontal" Padding="3">
+                                            <Image  Source = "{Binding ImagePath}" Margin="7,0,0,0" VerticalOptions="Fill"  WidthRequest="100" />
+                                            <StackLayout Orientation="Vertical" VerticalOptions="Center" Padding="10,5,3,5">
+                                                <Label Text = "{Binding Title}" TextColor="Black" FontSize="13" VerticalTextAlignment="Center"/>
+                                                <Label Text = "{Binding Description}" TextColor="Gray" FontSize="12" VerticalTextAlignment="Center"/>
+                                            </StackLayout>
+                                        </StackLayout>
+                                    </Frame>
+                                </ViewCell.View>
+                            </ViewCell>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+            </StackLayout>
+        </ContentPage.Content>
+
+</ContentPage>

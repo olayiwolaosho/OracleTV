@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="New_Estate_Baptist_Church.Views.EventsPage" Icon="calendar.png">
+    <StackLayout>
+                <Grid VerticalOptions="FillAndExpand">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*" />
+                    </Grid.RowDefinitions>
+                    <ListView ItemsSource="{Binding Events}"
+                  HasUnevenRows="True"
+                  ItemSelected="OnSingleEventSelected"
+                  VerticalOptions="FillAndExpand"
+                      SeparatorVisibility="None" IsPullToRefreshEnabled="true" RefreshCommand="{Binding RefreshCommand}" IsRefreshing="{Binding IsBusy}" x:Name="eventlist">
+                        <ListView.ItemTemplate>
+                            <DataTemplate>
+                                <ViewCell>
+                                    <ViewCell.View>
+                                        <Frame HasShadow="True" Margin="0,0,0,8">
+                                            <Grid>
+                                                <Grid.ColumnDefinitions>
+                                                    <ColumnDefinition Width="57"/>
+                                                    <ColumnDefinition Width="*"/>
+                                                </Grid.ColumnDefinitions>
+                                                <Image  Source="calendaricon.jpg" Grid.Column="0" Margin="0,0,10,0"  />
+                                                <StackLayout Grid.Column="1" Orientation="Vertical" HorizontalOptions="FillAndExpand">
+                                                    <Label Text="{Binding name}" Style="{StaticResource ListHeaderLabel}" />
+                                                    <Label Text="{Binding description}" Style="{StaticResource ListContentLabel}"  />
+                                                    <Label Text="{Binding startDate, StringFormat='{0:dddd, MMMM dd, yyyy}'}" Style="{StaticResource ListDateLabel}"/>
+
+                                                </StackLayout>
+                                            </Grid>
+                                        </Frame>
+                                    </ViewCell.View>
+                                </ViewCell>
+                            </DataTemplate>
+                        </ListView.ItemTemplate>
+                    </ListView>
+                </Grid>
+            </StackLayout>
+</ContentPage>

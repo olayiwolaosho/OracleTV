@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="New_Estate_Baptist_Church.Views.TestimontyAdd" xmlns:sys="clr-namespace:System;assembly=mscorlib">
+    <ContentPage.Content>
+         <ScrollView>
+        <StackLayout Padding="20,30,20,0">
+            <Label Text="Your Full Name:"  Margin="0"/>
+            <Entry Text="{Binding testifiersName}" Margin="0,0,0,0"/>
+            <Label Text="Phone:"  Margin="0"/>
+            <Entry Text="{Binding testifiersPhone}" Margin="0,0,0,0"/>
+            <Label Text="Testimony Title:" Margin="0"/>
+            <Entry Text="{Binding title}" Margin="0,0,0,0"/>
+            <Label Text="Date:" Margin="0"/>
+            <DatePicker Date="{Binding date}" Margin="0,0,0,0">
+                <DatePicker.MinimumDate>
+                    <sys:DateTime x:FactoryMethod="Parse">
+                        <x:Arguments>
+                            <x:String>Jan 1 2018</x:String>
+                        </x:Arguments>
+                    </sys:DateTime>
+                </DatePicker.MinimumDate>
+            </DatePicker>
+            <Label Text="Details:" Margin="0"/>
+            <Editor Text="{Binding details}" Margin="0,0,0,0"  AutoSize="TextChanges"/>
+
+            <Button Text="Send" BackgroundColor="#662b26" TextColor="White" Clicked="OnSendTestimonyClicked"/>
+            <Button Text="Cancel" BackgroundColor="#ce1d02" TextColor="White" Clicked="OnCancelTestimonyClicked"/>
+        </StackLayout>
+    </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

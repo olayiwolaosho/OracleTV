@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="New_Estate_Baptist_Church.Views.DevotionalSingleView">
+    <Frame VerticalOptions="StartAndExpand">
+        
+            <ScrollView>
+            <StackLayout>
+                <Label Text="{Binding title}" Style="{StaticResource HeaderMediumLabel}"/>
+                <Label Text="{Binding date, StringFormat='{0:dddd, MMMM dd, yyyy}'}" Style="{StaticResource ListDateLabel}"
+                       />
+                <Label Text="{Binding text}" Style="{StaticResource ContentLabel}" />
+                <BoxView Color="LightGray" HeightRequest="1"></BoxView>
+
+                <Label Text="{Binding memoryVerse}" Style="{StaticResource ContentLabel}"/>
+                <BoxView Color="LightGray" HeightRequest="1"></BoxView>
+                <Label Text="{Binding message}" Style="{StaticResource ContentLabel}"/>
+
+                <Label Text="Prayers" Margin="5,10,5,5" Style="{StaticResource HeaderMediumLabel}" />
+                <Label Text="{Binding prayers}" Style="{StaticResource ContentLabel}"/>
+
+                <Label Text="Bible In a Year" Margin="5,10,5,5" Style="{StaticResource HeaderMediumLabel}" />
+                <Label Text="{Binding bibleInaYear}" Style="{StaticResource ContentLabel}"/>
+            </StackLayout>
+        </ScrollView>
+            
+       
+    </Frame>
+</ContentPage>

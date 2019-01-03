@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="New_Estate_Baptist_Church.Views.ChapterPage">
+    <StackLayout>
+        <Image Source="Chapter.png" HorizontalOptions="StartAndExpand"/>
+          <ActivityIndicator IsEnabled="{Binding IsBusy}"
+                           IsRunning="{Binding IsBusy}"
+                           IsVisible="{Binding IsBusy}"
+                           VerticalOptions="Center"
+                           HorizontalOptions="Center" x:Name="ActivityIndicator"/>
+   <ListView x:Name="listView"                  
+            ItemsSource = ""
+              HasUnevenRows="True"
+                  SeparatorVisibility="None"
+                  Margin="0,3,0,5"
+                  ItemSelected="Handle_ItemSelected">
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <ViewCell>
+                                <ViewCell.View>
+                                        <StackLayout Orientation="Horizontal" Padding="3">
+                                            <StackLayout Orientation="Vertical" VerticalOptions="Center" Padding="10,5,3,5">
+                                           <Label Text = "{Binding ChapterNumber}" TextColor="Black" FontSize="15" VerticalTextAlignment="Center" />
+                                            </StackLayout>
+                                        </StackLayout>
+                                    
+                                </ViewCell.View>
+                            </ViewCell>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+        </StackLayout>
+</ContentPage>
